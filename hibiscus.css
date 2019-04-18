@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-sans-serif;
+  color: #222;
+}
+
+#logo {
+  width: 50px;
+}
+.padding {
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.navbar {
+  padding: .8rem;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em; !important
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /*to center the text vertically - CHECK!! */
+}
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+}
+
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+.jumbotron {
+  padding: .7rem;
+  background-color: #8C8A8A;
+  border-radius: 0; /*jumbotron has a border radius, so we can remove it */
+}
+#clients {
+  background: gray;
+  padding: .6rem;
+}
+.client-list {
+  margin: 0 auto;
+  text-align: center;
+}
+.client-list img {
+  max-height: 100px;
+  padding: .8rem 3rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.fa-heart {
+  color: #cc0000;
+}
+.fa-hands-helping {
+  color: #2EA619;
+}
+.fa-parachute-box {
+  color: #2163af;
+}
+.fa-heart, .fa-hands-helping, .fa-parachute-box {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.fa-quote-left, .fa-quote-right {
+    font-size: 4rem;
+    display: block;
+}
+
+.fa-quote-left {
+  padding-bottom: 2rem;
+}
+
+.fa-quote-right {
+  text-align: right;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#insertquote{
+  padding-top: 35%;
+}
+#thequote {
+  text-align: right;
+  font-size: 1.5em;
+  color: grey;
+  line-height: 1.2em;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#saidwho {
+  font-style: italic;
+  font-size: 1.2em;
+}
+/* -----  CARD DECK  --------   */
+
+.card-deck {
+  margin: .5em;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('images/05.jpeg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}﻿
+
+
+/* -------------  GOOGLE MAP  ----------------- */
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+/* 16x9 Aspect Ratio */
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+}
+
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 2.5em;
+  width: 85%;
+  height: 100%;
+}
+
+
+.social a {
+  font-size: 3.5em;
+  padding: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-instagram {
+  color: #517fa4;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-facebook:hover, .fa-twitter:hover,
+.fa-instagram:hover, .fa-youtube:hover {
+  color: #d5d5d5;
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+/* --------   Media Queries  --------  */
+
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+
+/*-------------------------------------*/
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+}
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
+.carousel-caption .btn {
+  fobt-size: 95%;
+  padding: 8px 14px;
+}
+.display-4 {
+  font-size: 200%;
+}
+
+#thequote {
+  font-size: 2.7rem;
+  line-height: 1.3em;
+}
+
+.social a{
+  font-size: 2.5em;
+  padding: 1.2rem;
+}
+}
+
+/* ----------------------- */
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 40%;
+  }
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 110%;
+
+  }
+  .carousel-caption .btn {
+  fobt-size: 90%;
+  padding: 4px 8px;}
+
+.carousel-indicators {
+  display:none;
+}
+.display-4 {
+  font-size: 160%;
+}
+#location {
+  margin-top: 1rem;
+}
+
+
+.fa-quote-left, .fa-quote-right {
+    font-size: 3rem;
+}
+
+#thequote {
+  font-size: 2em;
+  line-height: 1.4em;
+}
+
+#saidwho {
+  padding-bottom: .4rem;
+  font-size: 1.5rem;
+}
+.social a{
+  font-size: 2em;
+  padding: .7rem;
+}
+}
