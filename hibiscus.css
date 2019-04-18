@@ -62,7 +62,7 @@ html, body {
 }
 #clients {
   background: gray;
-  padding: .6rem;
+  padding: 1rem 0;
 }
 .client-list {
   margin: 0 auto;
@@ -302,5 +302,4 @@ footer {
 .social a{
   font-size: 2em;
   padding: .7rem;
-}
 }
