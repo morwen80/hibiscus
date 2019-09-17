@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Marko+One|Poppins:400,700&display=swap');
 :root {
   --red: #E33530;
+  --darkRed: #aa2422;
   --lightGrey: #f2f2f2;
   --darkGrey: #4A4A4B;
   --green: #4F8540;
@@ -220,6 +221,21 @@ figure {
   width: 85%;
   height: 100%;
 }
+
+button {
+  background-color: var(--red);
+  border: none;
+  padding: .3rem 1rem;
+  color: #fff;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--darkRed);
+  transition: background-color .5s;
+
+}
+
+/* SOCIAL BUTTONS */
 
 .social {
   padding-bottom: 2rem;
