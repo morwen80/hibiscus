@@ -61,10 +61,12 @@ html, body {
   border-radius: 0; /*jumbotron has a border radius, so we can remove it */
 }
 #clients {
+  text-align: center;
   background: gray;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 .client-list {
+  padding-top: 1rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -74,9 +76,10 @@ html, body {
 }
 
 .welcome {
-  width: 75%;
+  /* width: 75%; */
   margin: auto;
   padding-top: 2rem;
+  text-align: center;
 }
 .welcome hr {
   border-top: 2px solid #b4b4b4;
@@ -213,7 +216,9 @@ figure {
 footer {
   background-color: #3f3f3f;
   color: #d5d5d5;
-  padding-top: 2rem;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  font-weight: 400;
 }
 
 /* --------   Media Queries  --------  */
@@ -299,7 +304,7 @@ footer {
   padding-bottom: .4rem;
   font-size: 1.5rem;
 }
-.social a{
+.social a {
   font-size: 2em;
   padding: .7rem;
 }
