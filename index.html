@@ -12,22 +12,36 @@
     body {
       font-size: 1.1rem;
     }
-    h2 {
-      padding: 3rem 0 2.5rem 0;
-      font-size: 3rem;
-      text-align: center;
+    h3 {
+      font-family: 'Marko One', serif;
+      padding-bottom: 1.6rem;
     }
-    section{
-      padding-bottom: 2.5rem;
+    h2 {
+      font-family: 'Marko One', serif;
+      padding: 3rem 0 2.5rem 0;
+      font-size: 2.5rem;
+      text-align: center;
+      color: var(--red);
+    }
+    section {
+      padding: 2.5rem 1rem;
     }
 
      #clients {
        margin-bottom: 2.5rem;
+       padding: 2rem;
+       background-color: var(--darkGrey);
+     }
+
+     #discover {
+       padding: 4.5rem 3rem;
+     }
+     .tea {
+       text-align: right;
+       padding: 5% 0;
      }
 
   </style>
-
-
   <body>
     <header>
       <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -72,8 +86,6 @@
             <div class="carousel-caption">
               <h1 class="display-2">Hibiscus</h1>
               <h3>For all your Flower Needs</h3>
-              <button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
-              <button type="button" class="btn btn-primary btn-lg">Get Started</button>
             </div>
         </div>
         <div class="carousel-item">
@@ -86,18 +98,17 @@
     </div>
   </header>
 
-  <section id="about">
+  <section class="container-fluid" id="about">
     <h2>What can we do for you?</h2>
-    <div class="container whatWeDo">
     <div class="row text-center">
-      <div class="col-xs-12 col-sm-6 col-md-4" id="services">
+      <div class="col-sm-12 col-md-4" id="services">
         <i class="fas fa-heart"></i>
         <h3>We cater</h3>
         <p>We have over 10 years of experience to cater for all type of events. Weddings, anniversaries, royal parties *wink wink*.<br>
           Call us or visit us for a free quote.</p>
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-sm-12 col-md-4">
         <i class="fas fa-hands-helping"></i>
         <h3>We workshop</h3>
         <p>We organize awesome theme-flower workshops all year round, both private and public. Check out our <a href="#">calendar</a> to find out more or call us to book your private event.</p>
@@ -110,14 +121,12 @@
         We are awesome but can't do miracles (yet).
       </p>
       </div>
-    <!-- </div>
-    <hr class="my-4">
-    </div> -->
+    </div>
   </section>
 
   <!-- CLIENTS -->
   <section id="clients">
-        <h3>Some of Our Clients</h3>
+    <h3>Some of Our Clients</h3>
       <div class="client-list">
         <img src="images/millennium-logo.png" class="img-fluid">
         <img src="images/park_plaza.png" class="img-fluid">
@@ -128,17 +137,17 @@
   <!-- Fixed Background -->
   <figure>
     <div class="fixed-wrap">
-      <div id="fixed">
-      </div>
+      <div id="fixed"></div>
     </div>
   </figure>
 
-  <section class="container-fluid tea" id="discover">
+  <!-- Discover the teas -->
+  <section class="container-fluid" id="discover">
     <div class="row">
-      <div class="col md-12 col-lg-5">
+      <div class="col-lg-6">
         <img src="images/tea.jpg" class="img-fluid">
       </div>
-      <div class="col-lg-7">
+      <div class="col-lg-6 tea">
         <h3>Discover the benefits of herbal tea</h3>
         <p>Come and sit with us in our little garden.
         <br/>

@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
+@import url('https://fonts.googleapis.com/css?family=Marko+One|Poppins:400,700&display=swap');
+:root {
+  --red: #E33530;
+  --lightGrey: #f2f2f2;
+  --darkGrey: #4A4A4B;
+  --green: #4F8540;
+}
 html, body {
   height: 100%;
   width: 100%;
@@ -10,7 +15,7 @@ h1 {
   text-align: center;
   padding: 3rem 0 2rem 0;
   font-size: 3rem;
-
+  font-family: 'Marko One', serif;
 }
 #logo {
   width: 50px;
@@ -25,10 +30,11 @@ h1 {
 }
 
 .navbar-nav li {
-  padding-right: 20px;
+  padding-left: 20px;
 }
 .nav-link {
-  font-size: 1.1em; !important
+  font-size: 1rem!important;
+  text-transform: uppercase;
 }
 .carousel-inner img {
   width: 100%;
@@ -37,7 +43,7 @@ h1 {
 .carousel-caption {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /*to center the text vertically - CHECK!! */
+  transform: translateY(-50%);
 }
 .carousel-caption h1 {
   font-size: 500%;
@@ -50,6 +56,7 @@ h1 {
   font-weight: 500;
   text-shadow: 1px 1px 10px #000;
   padding-bottom: 1rem;
+  font-family: 'Marko One', serif;
 }
 .btn-primary {
   background-color: #6648b1;
@@ -96,17 +103,35 @@ h1 {
   padding: 2.5rem 0;
 }
 .fa-heart {
-  color: #cc0000;
+  color: var(--red);
+}
+.fa-heart:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 .fa-hands-helping {
-  color: #2EA619;
+  color: var(--green);
 }
+.fa-hands-helping:hover {
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
 .fa-parachute-box {
-  color: #2163af;
+  color: var(--darkGrey);
 }
+.fa-parachute-box:hover {
+  -ms-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
 .fa-heart, .fa-hands-helping, .fa-parachute-box {
-  font-size: 4em;
-  margin: 1rem;
+  font-size: 2.5em;
+  padding: 1rem;
+  transition: transform .5s;
 }
 
 .fa-quote-left, .fa-quote-right {
@@ -149,7 +174,7 @@ h1 {
 figure {
   position: relative;
   width: 100%;
-  height: 60%;
+  height: 80%;
   margin: 0!important;
 }
 .fixed-wrap {
@@ -275,7 +300,6 @@ h2 {
 
   .carousel-caption h3 {
     font-size: 110%;
-
   }
   .carousel-caption .btn {
   font-size: 90%;
@@ -291,7 +315,7 @@ h2 {
 .fa-quote-left, .fa-quote-right {
     font-size: 3rem;
 }
-#connect, .whatWeDo {
+#connect, #about {
   padding: .5rem!important;
 }
 
