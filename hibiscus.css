@@ -153,18 +153,18 @@ h1 {
   padding-top: 35%;
 }
 #thequote {
+  font-family: 'Marko One', serif;
   text-align: right;
-  font-size: 1.5em;
-  color: grey;
-  line-height: 1.2em;
-  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--darkGrey);
+  font-weight: 400;
   font-style: italic;
 }
 
 #saidwho {
-  font-style: italic;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
+
 /* -----  CARD DECK  --------   */
 
 .card-deck {
@@ -201,7 +201,7 @@ figure {
 }﻿
 
 
-/* -------------  GOOGLE MAP  ----------------- */
+/* ----------  GOOGLE MAP  --------- */
 .intrinsic-container {
   position: relative;
   height: 0;
@@ -323,7 +323,7 @@ h2 {
   width: 100%;
 }
 #thequote {
-  font-size: 2em;
+  font-size: 1.6rem;
   line-height: 1.4em;
 }
 
