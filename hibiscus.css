@@ -81,7 +81,6 @@ h1 {
 }
 
 .welcome {
-  /* width: 75%; */
   margin: auto;
   padding-top: 2rem;
   text-align: center;
@@ -93,6 +92,9 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.whatWeDo {
+  padding: 2.5rem 0;
+}
 .fa-heart {
   color: #cc0000;
 }
@@ -258,6 +260,7 @@ footer {
 }
 h2 {
   margin-top: 2.5rem;
+  text-align: center;
 }
 }
 
@@ -288,7 +291,13 @@ h2 {
 .fa-quote-left, .fa-quote-right {
     font-size: 3rem;
 }
+#connect, .whatWeDo {
+  padding: .5rem!important;
+}
 
+.map {
+  width: 100%;
+}
 #thequote {
   font-size: 2em;
   line-height: 1.4em;
