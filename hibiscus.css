@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Marko+One|Poppins:400,700&display=swap');
+
 :root {
   --red: #E33530;
   --darkRed: #aa2422;
@@ -6,26 +7,43 @@
   --darkGrey: #4A4A4B;
   --green: #4F8540;
 }
+
 html, body {
   height: 100%;
   width: 100%;
-  font-family: 'Poppins', sans-sans-serif;
-  color: #222;
+  /* font-family: 'Poppins', sans-sans-serif;
+  font-size: 1.1rem; */
+  color: var(--darkGrey);
+}
+h1, h2, h3 {
+  font-family: 'Marko One', serif;
 }
 h1 {
   text-align: center;
   padding: 3rem 0 2rem 0;
-  font-size: 3rem;
-  font-family: 'Marko One', serif;
+  /* font-size: 3rem; */
 }
+
+h2 {
+  padding: 3rem 0 2.5rem 0;
+  /* font-size: 2.5rem; */
+  text-align: center;
+  color: var(--red);
+}
+
+h3 {
+  padding-bottom: 1.6rem;
+}
+
+section {
+  padding: 2.5rem 1rem;
+}
+/*  END COMMONDS  */
+
 #logo {
   width: 50px;
 }
-.padding {
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
+
 .navbar {
   padding: .8rem;
 }
@@ -71,12 +89,17 @@ h1 {
 .jumbotron {
   padding: .7rem;
   background-color: #8C8A8A;
-  border-radius: 0; /*jumbotron has a border radius, so we can remove it */
+  border-radius: 0;
 }
+/* CLIENTS */
 #clients {
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background-color: var(--darkGrey);
   text-align: center;
-  background: gray;
-  padding: 1.5rem 0;
+}
+#clients h3 {
+  color: var(--lightGrey);
 }
 .client-list {
   padding-top: 1rem;
@@ -88,20 +111,13 @@ h1 {
   padding: .8rem 3rem;
 }
 
-.welcome {
-  margin: auto;
-  padding-top: 2rem;
-  text-align: center;
-}
-.welcome hr {
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
-}
+/* WHAT WE DO */
 
 .whatWeDo {
   padding: 2.5rem 0;
+}
+.aboutCard {
+  padding: 0 1.5rem;
 }
 .fa-heart {
   color: var(--red);
@@ -135,24 +151,19 @@ h1 {
   transition: transform .5s;
 }
 
-.fa-quote-left, .fa-quote-right {
-    font-size: 4rem;
-    display: block;
-}
+/* TEA SECTION  */
 
-.fa-quote-left {
-  padding-bottom: 2rem;
+#discover {
+  padding: 4.5rem 3rem;
 }
-
-.fa-quote-right {
+#discover p {
+  font-size: 1.3rem;
+}
+.tea {
   text-align: right;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 5% 0;
 }
 
-#insertquote{
-  padding-top: 35%;
-}
 #thequote {
   font-family: 'Marko One', serif;
   text-align: right;
@@ -166,11 +177,14 @@ h1 {
   font-size: 1.1em;
 }
 
-/* -----  CARD DECK  --------   */
-
+/* -----  TEAM  --------   */
+#team {
+  background-color: var(--lightGrey);
+}
 .card-deck {
   margin: .5em;
 }
+
 /*--- Fixed Background Image --*/
 figure {
   position: relative;
@@ -237,12 +251,12 @@ button:hover {
 
 /* SOCIAL BUTTONS */
 
-.social {
+#connect {
   padding-bottom: 2rem;
   text-align: center;
 }
-.social a {
-  font-size: 3.5em;
+#connect a {
+  font-size: 3em;
   padding: 2rem;
 }
 
@@ -253,7 +267,7 @@ button:hover {
   color: #00aced;
 }
 .fa-instagram {
-  color: #517fa4;
+  color: var(--red);
 }
 .fa-youtube {
   color: #bb0000;
@@ -265,17 +279,17 @@ button:hover {
 }
 
 footer {
-  background-color: #3f3f3f;
-  color: #d5d5d5;
+  background-color: var(--lightGrey);
+  color: var(--darkGrey);
   padding: 2rem 0 1rem 0;
   text-align: center;
   font-weight: 400;
 }
 
-/* --------   Media Queries  --------  */
+/* --------   MEDIA QUERIES  --------  */
 
 @media (max-width: 992px) {
-  .social a {
+  #connect a {
     font-size: 4em;
     padding: 2rem;
   }
@@ -296,17 +310,30 @@ footer {
     padding-bottom: .2rem;
   }
 .carousel-caption .btn {
-  fobt-size: 95%;
+  font-size: 95%;
   padding: 8px 14px;
 }
 h2 {
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
   text-align: center;
 }
 }
 
 /* ----------------------- */
-@media (max-width: 576px) {
+@media only screen and (max-width: 600px) {
+  h2 {
+    padding: 1rem 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: .7rem;
+  }
+  section {
+    padding: 1.5rem .6rem;
+  }
+
   .carousel-caption {
     top: 40%;
   }
@@ -324,30 +351,41 @@ h2 {
 .carousel-indicators {
   display:none;
 }
-.display-4 {
-  font-size: 160%;
-}
 
-.fa-quote-left, .fa-quote-right {
-    font-size: 3rem;
-}
+
 #connect, #about {
   padding: .5rem!important;
 }
-
+#location h3 {
+  padding-top: 1.5rem;
+}
 .map {
   width: 100%;
 }
+
 #thequote {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.4em;
 }
 
 #saidwho {
-  padding-bottom: .4rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
-.social a {
+.client-list {
+  display: inline-table;
+}
+
+
+
+.client-list img {
+  max-width: 30%;
+  max-height: 100px;
+  margin: 0;
+  padding: 0 .8rem;
+}
+
+
+#connect a {
   font-size: 3em;
   padding: .7rem;
 }
