@@ -36,7 +36,7 @@ h3 {
 }
 
 section {
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 1.5rem;
 }
 /*  END COMMONDS  */
 
@@ -153,15 +153,12 @@ section {
 
 /* TEA SECTION  */
 
-#discover {
-  padding: 4.5rem 3rem;
-}
 #discover p {
   font-size: 1.3rem;
 }
 .tea {
   text-align: right;
-  padding: 5% 0;
+  padding: 5% 1rem;
 }
 
 #thequote {
@@ -171,6 +168,7 @@ section {
   color: var(--darkGrey);
   font-weight: 400;
   font-style: italic;
+  padding-bottom: .6rem;
 }
 
 #saidwho {
@@ -281,7 +279,7 @@ button:hover {
 footer {
   background-color: var(--lightGrey);
   color: var(--darkGrey);
-  padding: 2rem 0 1rem 0;
+  padding: 1.5rem 0 1rem 0;
   text-align: center;
   font-weight: 400;
 }
@@ -352,30 +350,41 @@ h2 {
   display:none;
 }
 
-
 #connect, #about {
   padding: .5rem!important;
 }
-#location h3 {
-  padding-top: 1.5rem;
+.fa-heart, .fa-hands-helping, .fa-parachute-box {
+  /* font-size: 1.5em;
+  padding: 0; */
+  display: none;
 }
+.aboutCard {
+  padding: 1.5rem;
+}
+.aboutCard h3 {
+  padding-top: 0;
+}
+
 .map {
   width: 100%;
 }
 
+/* tea */
+
 #thequote {
   font-size: 1.2rem;
   line-height: 1.4em;
+
 }
 
 #saidwho {
   font-size: 1.1rem;
 }
+
+/* clients */
 .client-list {
   display: inline-table;
 }
-
-
 
 .client-list img {
   max-width: 30%;
@@ -386,6 +395,6 @@ h2 {
 
 
 #connect a {
-  font-size: 3em;
+  font-size: 2rem;
   padding: .7rem;
 }
