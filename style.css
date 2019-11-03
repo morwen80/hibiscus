@@ -87,6 +87,7 @@ h4 {
 #headBlock button {
   margin-top: 7vmin;
   background-color: var(--red);
+  color: #fff;
 }
 
 
