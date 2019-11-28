@@ -1,4 +1,4 @@
-onst sendForm = () => {
+const sendForm = () => {
   const submitBtn = document.querySelector("#submitBtn")
   const message = document.querySelector('#form-message').value
   const username = document.querySelector("#form-name").value
